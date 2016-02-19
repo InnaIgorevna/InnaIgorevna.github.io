@@ -1,0 +1,81 @@
+.container {
+    max-width: 900px;
+}
+
+.rubber-width {
+    width: 20%;
+    max-width: 180px;
+    min-width: 120px;
+}
+
+.rubber-hex-height {
+    position: relative;
+    height: 0;
+    border: none;
+}
+
+.hex-ratio {
+    padding-top: 57.7333%;
+}
+
+.hex { 
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/hexagon1.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float:left;
+    margin-top: 250px;
+    z-index: -5;
+}
+
+.hex .corner-1,
+.hex .corner-2 {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: inherit;
+	overflow: hidden;
+}
+
+.hex .corner-1 {
+    transform: rotate(60deg);
+	z-index: -2;
+}
+
+.hex .corner-2 {
+    transform: rotate(-60deg);
+    z-index: -1;
+}
+
+.hex .corner-1:before {
+	width: 100%;
+	height: 200%;
+	content: '';
+	position: absolute;
+	background: inherit;
+	top:0;
+	left: 0;
+	z-index: 2;
+	transform: rotate(-60deg) translate(-50%, 0%);
+	transform-origin: 0 0;
+}
+
+.hex .corner-2:before {
+    width: 100%;
+    height: 201.2%;
+    content: '';
+    position: absolute;
+    background: inherit;
+    top:0;
+    left: 0;
+    z-index: 2;
+    transform: rotate(60deg) translate(0%, -75%);
+    transform-origin: 0 0;
+}

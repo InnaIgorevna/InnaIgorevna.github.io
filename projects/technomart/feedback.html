@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Техномарт</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="feedback-page">
+        <form class="feedback-form-data" action="/echo" method="post">
+			<label><span>Ваше имя:</span>
+	        	<input type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
+        	</label>
+			<label><span>Ваш e-mail:</span>
+	         	<input type="text" name="email" placeholder="Для отправки ответа" required>
+         	</label>
+         	<label><span>Текст письма:</span>
+         		<textarea name="comment" id="comment-field" rows="7" placeholder="В свободной форме"></textarea>
+         	</label>
+        </form>
+        <div class="feedback-form-btn">
+		    <button type="submit" class="btn btn-red">Oтправить</button>
+		    <button type="submit" class="btn btn-white">Отмена</button>
+	    </div>
+    </div>
+</body>
+</html>
