@@ -489,6 +489,11 @@ img{
     height: 650px;
   }
 
+  .main-picture img{
+    width: 100%;
+    height: 100%;
+  }
+
   .big-picture {
     display: inline-block;
     width: 450px;
@@ -497,7 +502,7 @@ img{
   }
 
   .big-picture img{
-    margin-bottom: 650px;
+    margin-bottom: 550px;
   }
 
   .picture:nth-child(1), .picture:nth-child(3), 
@@ -525,18 +530,18 @@ img{
 
   .main-picture {
     width: 550px;
-    height: 780px;
+    height: 805px;
   }
 
   .big-picture {
     display: inline-block;
     width: 550px;
-    height: 780px;
+    height: 805px;
     overflow: hidden;
   }
 
   .big-picture img{
-    margin-bottom: 780px;
+    margin-bottom: 805px;
   }
 
   .effect:hover .overlay-2 {
