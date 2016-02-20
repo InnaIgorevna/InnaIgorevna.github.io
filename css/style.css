@@ -527,8 +527,16 @@ img{
     height: 100%;
   }
 
-  .picture:nth-child(1), .picture:nth-child(3), 
-  .picture:nth-child(5), .picture{
+  .picture:nth-child(2), 
+  .picture:nth-child(4), 
+  .picture:nth-child(6){
+    margin-right: 10px; 
+  }
+
+  
+  .picture:nth-child(1), 
+  .picture:nth-child(3), 
+  .picture:nth-child(5){
     margin-left: 10px;
     margin-right: 10px;
   }
