@@ -502,8 +502,8 @@ img{
 }
 
 @media (max-width: 1040px){
-  .chief-block {
-    max-width: 100%;
+  .container, .chief-block {
+    width: 100%;
   }
 
   .picture{
