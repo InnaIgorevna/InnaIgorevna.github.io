@@ -64,9 +64,9 @@
 
 
 body{
-	font-family: 'Marck Script', cursive;
-	font-family: 'Oleo Script', cursive;
-	font-family: 'PT Sans', Arial, sans-serif;
+  font-family: 'Marck Script', cursive;
+  font-family: 'Oleo Script', cursive;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-family: 'Playfair Display', serif;
   width: 100%;
 }
@@ -76,7 +76,7 @@ body{
   vertical-align: top;
 }
 
-.container{	
+.container{ 
   width: 100%;
   height: 100%;
    position: relative;
@@ -94,7 +94,7 @@ header{
 }
 
 .name h1{
-	font: 6.2em 'Marck Script', 'Oleo Script', cursive;
+  font: 6.2em 'Marck Script', 'Oleo Script', cursive;
   color: #011C63;
 }
 .name {
@@ -151,9 +151,74 @@ header{
   color: #011C63;
 }
 
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-o-keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+
 .contact i:hover{
-  color: #011C63;;
-  -webkit-filter: drop-shadow(0 0 3px #011C63);
+  color: #011C63;
+  -webkit-animation-name: rotate;
+    -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+        -o-animation-name: rotate;
+            animation-name: rotate;
+  -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+      -ms-animation-duration: 1s;
+        -0-animation-duration: 1s;
+            animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+      -ms-animation-iteration-count: 1;
+        -o-animation-iteration-count: 1;
+            animation-iteration-count: 1;
 }
 
 .contact i:active{
@@ -230,7 +295,7 @@ header{
 }
 
 img{
-	background: #808080;
+  background: #808080;
 }
 
 .effect{
@@ -362,7 +427,11 @@ img{
   -o-transition-delay: 0.4s;
   -ms-transition-delay: 0.4s;
   transition-delay: 0.4s;
-}                  
+}    
+
+.copywriter{
+  margin-bottom: 30px;
+}              
 
 
 
@@ -442,6 +511,105 @@ img{
   .picture:nth-child(6) {
     margin-left: 15px; 
     margin-right: -20px;
+  }
+
+  .text, .overlay-1, .overlay-2{
+    display: none;
+  }
+
+  .main-picture{
+    position: relative;
+  }
+
+  .link-block{
+    display: block;
+    position: absolute;
+    top: 99.8%;
+    transform: translateY(-100%);
+    right: 0px;
+    width: 200px;
+    height: 70px;
+    background: rgba(1, 28, 99, 0.85);
+  }
+
+  .link-block a{
+    font-size: 65px;
+    color: #fff;
+  }
+
+  @-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-o-keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+
+.link-block a:hover{
+  color: #fff;
+  -webkit-animation-name: rotate;
+    -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+        -o-animation-name: rotate;
+            animation-name: rotate;
+  -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+      -ms-animation-duration: 1s;
+        -0-animation-duration: 1s;
+            animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+      -ms-animation-iteration-count: 1;
+        -o-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+  .link-block a:active{
+    color: #011C63;
+    opacity: 0;
   }
 
 }
@@ -547,5 +715,3 @@ img{
     width: 550px;
   }
 }
-
-
