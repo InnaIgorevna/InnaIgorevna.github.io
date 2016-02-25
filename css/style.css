@@ -154,55 +154,35 @@ header{
 @-webkit-keyframes rotate {
   100% {
     -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
   }
 }
 
 @-moz-keyframes rotate {
   100% {
-    -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
   }
 }
 
 @-ms-keyframes rotate {
   100% {
-    -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
   }
 }
 
 @-o-keyframes rotate {
   100% {
-    -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
   }
 }
 
 @keyframes rotate {
   100% {
-    -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
 
-.contact i:hover{
+.contact:hover, .link-block-contact:hover{
   color: #011C63;
   -webkit-animation-name: rotate;
     -moz-animation-name: rotate;
@@ -326,10 +306,10 @@ img{
   width: 0px;
   height: 0px;
   overflow: hidden;
-  -o-transition: all 0.2s linear 0.2s;
-  -moz-transition: all 0.2s linear 0.2s;
   -webkit-transition: all 0.2s linear 0.2s;
+  -moz-transition: all 0.2s linear 0.2s;
   -ms-transition: all 0.2s linear 0.2s;
+  -o-transition: all 0.2s linear 0.2s;
   transition: all 0.2s linear 0.2s;
 }
 
@@ -342,20 +322,20 @@ img{
   width: 0px;
   height: 0px;
   opacity: 0;
-  -o-transition: all 0.3s linear 0.3s;
-  -moz-transition: all 0.3s linear 0.3s;
   -webkit-transition: all 0.3s linear 0.3s;
+  -moz-transition: all 0.3s linear 0.3s;
   -ms-transition: all 0.3s linear 0.3s;
+  -o-transition: all 0.3s linear 0.3s;
   transition: all 0.3s linear 0.3s;
 }
 
 .effect:hover .overlay-1{
   width: 100%;
   height: 100%;
-  -moz-transition-delay: 0s;
   -webkit-transition-delay: 0s;
-  -o-transition-delay: 0s;
+  -moz-transition-delay: 0s;
   -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
 } 
 
@@ -365,10 +345,10 @@ img{
   height: 98%;
   max-height: calc(100% - 18px);
   opacity: 1;
-  -moz-transition-delay: 0s;
   -webkit-transition-delay: 0s;
-  -o-transition-delay: 0s;
+  -moz-transition-delay: 0s;
   -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
 }
 
@@ -383,10 +363,10 @@ img{
   width: calc(90% - 18px);
   position: relative;
   top: -100%;
-  -o-transition: all 0.2s linear 0.1s;
-  -moz-transition: all 0.2s linear 0.1s;
   -webkit-transition: all 0.2s linear 0.1s;
+  -moz-transition: all 0.2s linear 0.1s;
   -ms-transition: all 0.2s linear 0.1s;
+  -o-transition: all 0.2s linear 0.1s;
   transition: all 0.2s linear 0.1s;
 }
 
@@ -397,10 +377,10 @@ img{
   padding: 0px 40px;
   position: relative;
   top: -150%;
-  -o-transition: all 0.2s linear 0.1s;
-  -moz-transition: all 0.2s linear 0.1s;
   -webkit-transition: all 0.2s linear 0.1s;
+  -moz-transition: all 0.2s linear 0.1s;
   -ms-transition: all 0.2s linear 0.1s;
+  -o-transition: all 0.2s linear 0.1s;
   transition: all 0.2s linear 0.1s;
 }
 
@@ -415,17 +395,17 @@ img{
 }
 
 .effect:hover .text p, .effect:hover .text ul{
-  -moz-transition-delay: 0.3s;
   -webkit-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
   -ms-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
 .effect:hover .text h2 {
-  -moz-transition-delay: 0.4s;
   -webkit-transition-delay: 0.4s;
-  -o-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
   -ms-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }    
 
@@ -438,7 +418,11 @@ img{
 @media (max-width: 1245px){
 
   .container {
-    width: 1100px;
+    width: 100%;
+  }
+
+  .chief-block{
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -487,6 +471,16 @@ img{
     margin-top: 50px;
   }
 
+  .main-picture{
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-picture img{
+    width: 100%;
+    height: 100%;
+  }
+
   .effect .text h2{
     font: 1.5em/1em 'Playfair Display', serif;
     margin: 30px auto;
@@ -498,19 +492,19 @@ img{
     padding: 0px 20px;
   }
 
-  .picture:nth-child(2){
-    margin-right: -20px;
+  .picture:nth-child(2), 
+   
+  .picture:nth-child(6){
+    margin-right: 15px; 
   }
 
-  .picture:nth-child(3), .picture:nth-child(5){
-    margin-left: -20px;
+  
+  .picture:nth-child(1), 
+  .picture:nth-child(3), 
+  .picture:nth-child(4),
+  .picture:nth-child(5){
+    margin-left: 15px;
     margin-right: 15px;
-  }
-
-  .picture:nth-child(4), 
-  .picture:nth-child(6) {
-    margin-left: 15px; 
-    margin-right: -20px;
   }
 
   .text, .overlay-1, .overlay-2{
@@ -521,194 +515,57 @@ img{
     position: relative;
   }
 
-  .link-block{
+  .brief-block, .link-block{
     display: block;
     position: absolute;
     top: 99.8%;
     transform: translateY(-100%);
-    right: 0px;
-    width: 200px;
-    height: 70px;
+  }
+
+  .brief-block{
+    width: 100%;
+    height: 90px;
     background: rgba(1, 28, 99, 0.85);
   }
 
-  .link-block a{
+  .brief-text li{
+    color: #fff;
+    font: 1em/1.5em 'PT Sans', Arial, sans-serif; 
+  }
+
+  .brief-text{
+    width: 53%;
+    text-align: left;
+    list-style: square outside;
+    margin: 15px;
+    margin-left: 30px;
+  }
+
+  .link-block{
+    width: 200px;
+    height: 80px;
+    right: 0px;
+  }
+
+  .link-block li{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .link-block-contact a{
     font-size: 65px;
     color: #fff;
   }
 
-  @-webkit-keyframes rotate {
-  100% {
-    -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+  .link-block-contact a:hover{
+    color: #fff;
   }
-}
 
-@-moz-keyframes rotate {
-  100% {
-    -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@-ms-keyframes rotate {
-  100% {
-    -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@-o-keyframes rotate {
-  100% {
-    -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes rotate {
-  100% {
-    -webkit-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-
-.link-block a:hover{
-  color: #fff;
-  -webkit-animation-name: rotate;
-    -moz-animation-name: rotate;
-      -ms-animation-name: rotate;
-        -o-animation-name: rotate;
-            animation-name: rotate;
-  -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-      -ms-animation-duration: 1s;
-        -0-animation-duration: 1s;
-            animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
-    -moz-animation-iteration-count: 1;
-      -ms-animation-iteration-count: 1;
-        -o-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-}
-
-  .link-block a:active{
+  .link-block-contact a:active{
     color: #011C63;
     opacity: 0;
   }
-
 }
 
-
-@media (max-width: 1185px){
-
-  .container {
-    width: 1000px;
-  }
-
-  header {
-    top: -80px;
-  }
-
-  .picture{
-    margin: 10px;
-  }
-
-  .name {
-    margin-top: 5px;
-  }
-
-  .main-container{
-    margin-top: 80px;
-  }
-
-  .main-picture{
-    width: 450px;
-    height: 650px;
-  }
-
-  .main-picture img{
-    width: 100%;
-    height: 100%;
-  }
-
-  .picture:nth-child(2){
-    margin-right: -10px;
-  }
-
-  .picture:nth-child(1),  
-  .picture:nth-child(3),
-  .picture:nth-child(5){
-    margin-left: -10px;
-    margin-right: 10px;
-  }
-
-  .picture:nth-child(4), .picture:nth-child(6){
-    margin-left: 10px;
-    margin-right: -10px;
-  }
-
-  .effect:hover .overlay-2 {
-    width: 96%;
-    height: 99%;
-  }
-}
-
-@media (max-width: 1040px){
-  .container, .chief-block {
-    width: 100%;
-  }
-
-  .picture{
-    width: 85%;
-    height: 85%;
-    margin: 10 auto;
-  }
-
-  .main-picture {
-    width: 100%;
-    height: 100%;
-  }
-
-  .main-picture img{
-    width: 100%;
-    height: 100%;
-  }
-
-  .effect:hover .overlay-2 {
-    width: 100%;
-    height: 100%;
-  }
-
-  .picture:nth-child(2), 
-  .picture:nth-child(4), 
-  .picture:nth-child(6){
-    margin-right: 10px; 
-  }
-
-  
-  .picture:nth-child(1), 
-  .picture:nth-child(3), 
-  .picture:nth-child(5){
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
 
 @media (max-width: 550px){
   .container{

@@ -319,22 +319,22 @@ p, ul {
 }
 
 .btn {
-  	display: inline-block;
-  	vertical-align: top;
-   	padding: 10px 34px;
-   	margin-right: 20px;
-   	font-size: 14px;
-  	font-family: "PT Sans Narrow", sans-serif;
-  	font-weight: 700;
-  	line-height: 24px;
-  	text-decoration: none;
-  	text-transform: uppercase;
-  	text-align: center;
-  	color: #fff;
-  	background: #000;
-  	border: none;
-  	outline: none;
-  	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+ 	padding: 10px 34px;
+ 	margin-right: 20px;
+ 	font-size: 14px;
+	font-family: "PT Sans Narrow", sans-serif;
+	font-weight: 700;
+	line-height: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	background: #000;
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 .main-contacts .btn{
@@ -351,69 +351,69 @@ p, ul {
 .item-price-wrapper .button:hover,
 .item-price-wrapper .button:active,
 .pagination li:hover, .pagination li:active{
-  	background: #663d15;
+  background: #663d15;
 }
 
 .btn:disabled {
 	cursor: default;
-  	opacity: .5;
+  opacity: .5;
 }
 
 .btn:disabled:hover {
-  	background: #000;
+  background: #000;
 }
 
 .gallery {
-  	height: 260px;
-   	position: relative;
+	height: 260px;
+ 	position: relative;
 }
 
 .gallery-content {
-  	height: 164px;
-  	margin: 0;
-  	border: 7px solid white;
-  	background: #ccc;/*на тот случай если картинки не будет*/
+	height: 164px;
+	margin: 0;
+	border: 7px solid white;
+	background: #ccc;
 }
 
 .gallery .btn {/*сброс стандартных отступов*/
-  	position: absolute;
-  	bottom: 0;
-  	width: 140px;
-  	margin: 0;
+	position: absolute;
+	bottom: 0;
+	width: 140px;
+	margin: 0;
 }
 
 .gallery-prev {
-  	left: 0;
+  left: 0;
 }
 
 .gallery-next {
-  	right: 0;
+  right: 0;
 }
 
 .index-content p {
-  	margin: 0;
-  	margin-bottom: 27px;
+	margin: 0;
+	margin-bottom: 27px;
 }
 
 .index-content p:nth-child(3) {
-    margin: 0;
-    margin-bottom: 46px;
+  margin: 0;
+  margin-bottom: 46px;
 }
 
 .appointment-form  input {
 	float: left;
 	margin-right: 20px;
-  	margin-bottom: 20px;
-  	width: 106px;
-  	padding: 7px 15px;
-  	border: 2px solid #000;
-  	font-family: "PT Sans Narrow", sans-serif;
-  	font-size: 14px;
-  	line-height: 24px;
-  	text-transform: uppercase;
-   	color: #000;
-  	background: #f9f6f3;
-  	outline: none;
+	margin-bottom: 20px;
+	width: 106px;
+	padding: 7px 15px;
+	border: 2px solid #000;
+	font-family: "PT Sans Narrow", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+ 	color: #000;
+	background: #f9f6f3;
+	outline: none;
 }
 
 .appointment-form input[type="text"], .appointment-form input[type="tel"]{
@@ -421,16 +421,16 @@ p, ul {
 }
 
 .appointment-form  input:focus {
-  	border: 2px solid #663d15;
+  border: 2px solid #663d15;
 }
 
 .appointment-form  input:nth-child(2n) {
-  	margin-right: 0;
+  margin-right: 0;
 }
 
 .appointment-form .btn {
-  	clear: both;
-  	width: 100%;
+	clear: both;
+	width: 100%;
 }
 
 
@@ -440,55 +440,54 @@ p, ul {
 
 
 .main-footer {
-    margin-top: 66px;
-    padding-top: 57px;
-    padding-bottom: 40px;
-    background: #252525 url("../img/back-texture.png");
+  margin-top: 66px;
+  padding-top: 57px;
+  padding-bottom: 40px;
+  background: #252525 url("../img/back-texture.png");
 }
 
 .footer-contacts {
-    float: left;
-    width: 320px;
-    margin-right: 80px;
+  float: left;
+  width: 320px;
+  margin-right: 80px;
 }
 
 .footer-social {
-    float: left;
-    text-align: center;
+  float: left;
+  text-align: center;
 }
 
 .footer-copyright {
-    float: right;
-    max-width: 320px;
+  float: right;
+  max-width: 320px;
 }
 
 .footer-contacts a {
-    color: #fff;
+  color: #fff;
 }
 
 .footer-contacts a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-social p {
-    margin: 0;
-    margin-bottom: 15px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .footer-copyright p {
-    margin: 0;
-    margin-bottom: 15px;
-    text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .footer-copyright .btn {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .social-btn {
 	margin-right: 2px;
   display: inline-block;
-	vertical-align: top;
   width: 43px;
   height: 43px;
   font-size: 0;
@@ -497,41 +496,41 @@ p, ul {
 }
 
 .social-btn:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .social-btn-vk {
-    background-position:-137px 5px;/*позиции для картинок*/
+  background-position:-135px 6px;/*позиции для картинок*/
 }
 
 .social-btn-fb {
-    background-position:-172px 7px;
+  background-position:-173px 9px;
 }
 
 .social-btn-inst {
-    background-position:-228px 6px;
+  background-position:-228px 8px;
 }
 
 .social-btn-vk:hover {
-    background-position:-280px 7px;/*для черных иконок*/
+  background-position:-280px 7px;/*для черных иконок*/
 }
 
 .social-btn-fb:hover {
-    background-position:-320px;
+  background-position:-320px;
 }
 
 .social-btn-inst:hover {
-    background-position:-370px;
+  background-position:-370px;
 }
 
 .footer-copyright .btn:hover {
-    color: #000;
-    background: #fff;
+  color: #000;
+  background: #fff;
 }
 
 .footer-copyright .btn:hover {
-    color: #000;
-    background: #fff;
+  color: #000;
+  background: #fff;
 }
 
 
@@ -572,12 +571,12 @@ p, ul {
 }
 
 .product-filters-producers .filter:nth-child(7){
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-    display:none;   
+  display:none;   
 }
 
 .filter input[type="checkbox"] + label,
