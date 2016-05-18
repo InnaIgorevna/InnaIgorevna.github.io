@@ -69,6 +69,7 @@ body{
   font-family: 'PT Sans', Arial, sans-serif;
   font-family: 'Playfair Display', serif;
   text-align: center;
+  background-image: url("../img/paper-1138436.jpg");
 }
 
 .horizontal{
@@ -88,8 +89,8 @@ body{
 }
 .name {
   position: relative;
-  width: 65%;
-  padding: 1em;
+  width: 700px;
+  padding: 15px;
   margin: 2em auto;
   background:#fff;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
