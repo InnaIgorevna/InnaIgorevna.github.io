@@ -56,7 +56,7 @@ feedbackCancel.addEventListener("click", function(event){
 });
 //------------------------------
 var googleMapForm = document.querySelector(".google-map");
-var googleMapLink = document.querySelector(".map-image a");
+var googleMapLink = document.querySelector(".map-image");
 
 googleMapLink.addEventListener("click", function(event){
 	event.preventDefault();
@@ -67,6 +67,7 @@ mapCancel.addEventListener("click", function(event){
 	event.preventDefault();
 	googleMapForm.classList.add("hidden");
 });
+
 //------------------------------
 var promoSlide_1 = document.querySelector(".slider-content .slide-1");
 var promoSlide_2 = document.querySelector(".slider-content .slide-2");

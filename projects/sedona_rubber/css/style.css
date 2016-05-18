@@ -75,13 +75,14 @@ body{
 .container{
   width: 100%;
   height: 100%;
-  background: #f2f2f2;
+  background: #eeeeee;
 }
 
 .chief-block{
   margin: 0 auto;
   max-width: 1200px;
   background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .horizontal{
