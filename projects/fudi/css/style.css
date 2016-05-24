@@ -79,7 +79,6 @@ body{
 }
 
 .container{
-	max-width: 1600px;
 	margin: 0px auto;
 }
 
@@ -90,8 +89,9 @@ body{
 
 .header-menu{
 	width: auto;
+	height: 886px;
 	background: url("../img/picture/background.png") no-repeat;
-	background-size: 100% 875px;
+	background-size: 100% 886px;
 }
 
 .container-header-logo{
@@ -198,12 +198,15 @@ body{
 .services{
 	width: 100%;
 	margin-top: 100px;
+	text-align: center;
 }
 
 .blok-services{
-	width: 33%;
-	margin-right: 1px;
-	
+	width: 27%;	
+}
+
+.blok-services:nth-child(2){
+	margin: 0 20px;	
 }
 
 .item-services{
@@ -466,10 +469,6 @@ body{
 	    width: 95%;
 	}
 
-	.blok-services {
-    	width: 32%;
-   	}
-
 	.container-information {
 	    width: 90%;
 	}
@@ -489,6 +488,7 @@ body{
 	}
 
 	.header-menu {
+		height: 675px;
 	    background-size: 100% 675px;
 	}
 
@@ -549,6 +549,11 @@ body{
 }
 
 @media(max-width: 800px){
+	.header-menu {
+		height: 469px;
+    	background-size: 100% 469px;
+	}
+
 	.container-header-logo{
 		display: none;
 	}
@@ -561,6 +566,8 @@ body{
 	    margin-top: 2em;
 	    margin-bottom: 4em;
 	}
+
+
 
 	.header-container span:nth-child(1) {
 	    font: italic bold 1em/1em 'Times New Roman', serif;
@@ -671,9 +678,9 @@ body{
 	.container{
 		max-width: 100%;
 		min-width: 320px;
-		height: 1136px;
+		height: 100%;
 		background: url("../img/picture/background-y.png") no-repeat;
-		background-size: 100% 1136px;
+		background-size: 100% 100%;
 		position: relative;
 	}
 
@@ -688,8 +695,6 @@ body{
 
 	.container-header-menu{
 		height: 20px;
-		background: url("../img/Overlay.png") no-repeat;
-		background-size: 100% auto;
 	}
 
 	.container-header-logo{
@@ -750,7 +755,6 @@ body{
 	.container-list, .container-dishes{
 		max-width: 640px;
 		min-width: 320px;
-		height: 1136px
 	}
 
 	.catalog-header-menu{
