@@ -5,8 +5,7 @@ body{
   font-family: 'PT Sans', Arial, sans-serif;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  background: url("../img/paper-1138436.jpg");
-  background-color: #BBD8D6;
+  background: #BBD8D6 url("../img/paper-1138436.jpg") no-repeat center top;
 }
 
 .horizontal{

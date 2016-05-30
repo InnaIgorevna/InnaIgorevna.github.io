@@ -13,8 +13,9 @@ serviceSlideLink_1.addEventListener("click", function(event) {
 	serviceSlide_3.classList.add("hidden");
 	serviceSlideLink_1.classList.add("active-slider-menu");
 	serviceSlideLink_2.classList.remove("active-slider-menu");
-	serviceSlideLink_2.classList.remove("active-slider-menu");
+	serviceSlideLink_3.classList.remove("active-slider-menu");
 	});
+
 serviceSlideLink_2.addEventListener("click", function(event) {
 	event.preventDefault();
 	serviceSlide_1.classList.add("hidden");
@@ -24,6 +25,7 @@ serviceSlideLink_2.addEventListener("click", function(event) {
 	serviceSlideLink_2.classList.add("active-slider-menu");
 	serviceSlideLink_3.classList.remove("active-slider-menu");
 	});
+
 	serviceSlideLink_3.addEventListener("click", function(event) {
 	event.preventDefault();
 	serviceSlide_1.classList.add("hidden");
@@ -33,6 +35,7 @@ serviceSlideLink_2.addEventListener("click", function(event) {
 	serviceSlideLink_2.classList.remove("active-slider-menu");
 	serviceSlideLink_3.classList.add("active-slider-menu");
 	});
+
 	//------------------------------
 var feedbackForm = document.querySelector(".feedback-modal");
 var feedback = document.querySelector(".map>a");
