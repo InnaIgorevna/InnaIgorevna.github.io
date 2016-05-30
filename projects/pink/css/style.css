@@ -48,27 +48,12 @@ li {
   margin: 20px auto;
 }
 @font-face {
-  font-family: "opensans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/fonts/opensans.woff") format("woff"), url("../fonts/fonts/opensans.woff2") format("woff2");
-}
-@font-face {
-  font-family: "opensans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/fonts/opensansbold.woff") format("woff"), url("../fonts/fonts/opensansbold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "opensans";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/fonts/opensanslight.woff") format("woff"), url("../fonts/fonts/opensanslight.woff2") format("woff2");
+  font-family: "Open Sans", sans-serif;
 }
 body {
   margin: 0 auto;
   text-align: center;
-  font-family: "opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -132,7 +117,7 @@ main {
   border: 3px solid #ffffff;
   border-radius: 26px;
   color: #ffffff;
-  font-family: "opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 13px;
@@ -163,7 +148,7 @@ main {
   height: 37px;
   margin: 5px auto;
   color: #ffffff;
-  font-family: "opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -448,7 +433,7 @@ main {
 }
 .information__container-title {
   width: 300px;
-  font-family: "opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 24px;
   line-height: 27px;
   font-weight: 300;
@@ -492,7 +477,7 @@ main {
 }
 .intro__title {
   color: #ffffff;
-  font-family: "opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -532,6 +517,7 @@ main {
   width: 300px;
   margin: 50px auto 37px auto;
   color: #283645;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 24px;
   line-height: 27px;
   font-weight: 300;
@@ -604,7 +590,7 @@ main {
 .nav-menu__list-link {
   display: block;
   color: #ffffff;
-  font-family: "opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-size: 18px;
   font-weight: 700;
@@ -1135,7 +1121,7 @@ main {
 }
 .review__author {
   color: #000000;
-  font-family: "opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -2495,7 +2481,7 @@ main {
   }
   .intro-application-container--main {
     height: 875px;
-    background: url("../img/iphone-hand-tablet@2x.png") no-repeat bottom left 56%, url("../img/bg-back-tablet@2x.jpg") no-repeat -64px -227px;
+    background: url("../img/iphone-hand-tablet@2x.png") no-repeat bottom left 56%, url("../img/bg-back-tablet@2x.jpg") no-repeat center -227px;
     background-size: 824px 637px, auto 1281px;
   }
   .review {
