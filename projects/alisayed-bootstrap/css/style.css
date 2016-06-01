@@ -1,8 +1,50 @@
 body{
-    width: 100%;
     font: 12px/14px 'Roboto', Arial, sans-serif;
 }
 
 h1{
     font: 12px/14px 'Roboto', Arial, sans-serif;
+}
+
+.container-fluid{
+    background: #b3ff99;
+}
+
+.col-xs-8{
+    height: 715px;
+    background: #352706;
+}
+
+.col-xs-4{
+    height: 715px;
+    background: #ffffff;
+}
+
+.information-text{
+    height: 850px;
+    background: #7fbcff;
+}
+
+.container-history{
+    height: 850px;
+    background: #dcfcff;
+}
+
+.history{
+    height: 425px;
+    background: #ffd424;
+}
+
+.history:nth-child(2){
+    height: 425px;
+    background: #636163;
+}
+.webpage-text{
+    height: 710px;
+    background: #203ad9;
+}
+
+.feedback{
+    height: 710px;
+    background: #155515;
 }
