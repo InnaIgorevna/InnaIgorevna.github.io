@@ -10,41 +10,47 @@ h1{
     background: #b3ff99;
 }
 
-.col-xs-8{
-    height: 715px;
-    background: #352706;
+.header-picture{
+    height: 920px;
+    background: #352706 url("../img/picture/picture.jpg") no-repeat;
+    background-size: 100% 100%;
 }
 
-.col-xs-4{
-    height: 715px;
+.header-text{
+    height: 920px;
     background: #ffffff;
 }
 
 .information-text{
-    height: 850px;
-    background: #7fbcff;
+    height: 900px;
+    background: #7fbcff url("../img/picture/background-blue.jpg") no-repeat;
+    background-size: 100% 100%;
 }
 
 .container-history{
-    height: 850px;
+    height: 900px;
     background: #dcfcff;
 }
 
 .history{
-    height: 425px;
-    background: #ffd424;
+    height: 450px;
+    background: #ffd424 url("../img/picture/background-yellow.jpg") no-repeat;
+    background-size: 100% 100%;
 }
 
 .history:nth-child(2){
-    height: 425px;
-    background: #636163;
+    height: 450px;
+    background: #636163 url("../img/picture/background-gray.jpg") no-repeat;
+    background-size: 100% 100%;
 }
 .webpage-text{
     height: 710px;
-    background: #203ad9;
+    background: #203ad9 url("../img/picture/background-girl.jpg") no-repeat;
+    background-size: 100% 100%;
 }
 
 .feedback{
     height: 710px;
-    background: #155515;
+    background: #155515 url("../img/picture/background-nature.jpg") no-repeat;
+    background-size: 100% 100%;
 }
