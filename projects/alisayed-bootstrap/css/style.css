@@ -1,9 +1,17 @@
 body{
-    font: 12px/14px 'Roboto', Arial, sans-serif;
+    width: 100%;
+    font: 17px/29px 'Roboto', Arial, sans-serif;
+    font-weight: 300;
 }
 
 h1{
-    font: 12px/14px 'Roboto', Arial, sans-serif;
+    font: 42px/29px 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+}
+
+h2{
+    font: 47px/29px 'Roboto', Arial, sans-serif;
+    font-weight: 300;
 }
 
 .container-fluid{
@@ -19,38 +27,121 @@ h1{
 .header-text{
     height: 920px;
     background: #ffffff;
+    font: 19px/28px 'Roboto', Arial, sans-serif;
+}
+
+.container-title h1:nth-child(4){
+    margin-bottom: 57px;
+}
+
+.container-title p{
+    margin-bottom: 30px;
+}
+
+.hamburger{
+    height: 30px;
+    background: url("../img/menu.png") center no-repeat;
+    margin: 50px 0 56px 0;
 }
 
 .information-text{
-    height: 900px;
+    height: auto;
     background: #7fbcff url("../img/picture/background-blue.jpg") no-repeat;
     background-size: 100% 100%;
+    color: #ffffff;
+    padding: 55px 0 0 0;
+}
+
+.container-text h2{
+    margin-bottom: 39px;
+}
+
+.container-text p{
+    margin-bottom: 85px;
+}
+
+.container-text p:nth-child(6){
+    margin-bottom: 69px;
 }
 
 .container-history{
-    height: 900px;
     background: #dcfcff;
 }
 
 .history{
-    height: 450px;
     background: #ffd424 url("../img/picture/background-yellow.jpg") no-repeat;
     background-size: 100% 100%;
+    padding: 55px 0 70px 0;
+}
+
+.container-history .container-text p{
+    margin-bottom: 50px;
+}
+.button a{
+    display: block;
+    width: 210px;
+    padding: 15px 0px;
+    font: 18px 'Roboto', Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.btn:active{
+    width: 210px;
+    border: 1px solid #000000;
+    border-radius: 10px;
 }
 
 .history:nth-child(2){
-    height: 450px;
     background: #636163 url("../img/picture/background-gray.jpg") no-repeat;
     background-size: 100% 100%;
+    color: #ffffff;
 }
+
+.white a:last-child{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
 .webpage-text{
     height: 710px;
     background: #203ad9 url("../img/picture/background-girl.jpg") no-repeat;
     background-size: 100% 100%;
+    color: #ffffff;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    background: #000000 url("../img/logo.png") center no-repeat;
+    margin-top: 200px;
 }
 
 .feedback{
     height: 710px;
     background: #155515 url("../img/picture/background-nature.jpg") no-repeat;
     background-size: 100% 100%;
+}
+
+@media (min-width: 768px) and (max-width: 980px){
+    .header-picture{
+        height:730px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+    .header-picture{
+        height:400px;
+    }
+}
+
+@media (max-width: 480px){
+    .header-picture{
+        width:480px;
+        height:400px;
+    }
 }
