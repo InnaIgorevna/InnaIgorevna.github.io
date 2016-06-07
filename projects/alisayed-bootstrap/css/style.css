@@ -106,24 +106,99 @@ h2{
     border: 1px solid #ffffff;
 }
 
-.webpage-text{
+.copywriter{
     height: 710px;
     background: #203ad9 url("../img/picture/background-girl.jpg") no-repeat;
     background-size: 100% 100%;
     color: #ffffff;
+    padding: 50px 0;
+}
+
+.copywriter-text h2{
+    font: 47px/44px 'Roboto', Arial, sans-serif;
+    font-weight: 300;
 }
 
 .logo{
     width: 90px;
     height: 90px;
+    border-radius: 10px;
     background: #000000 url("../img/logo.png") center no-repeat;
-    margin-top: 200px;
+    margin-top: 265px;
+    margin-bottom: 30px;
+}
+
+.copywriter-text span{
+    font: 18px/33px 'Roboto', Arial, sans-serif;
 }
 
 .feedback{
     height: 710px;
     background: #155515 url("../img/picture/background-nature.jpg") no-repeat;
     background-size: 100% 100%;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.copywriter-feedback h2{
+    margin-bottom: 50px;
+}
+
+.feedback-form{
+    margin-bottom: 80px;
+}
+
+.feedback-form input,
+.feedback-form textarea{
+    background: transparent;
+    border-radius: 14px;
+    border: 1px solid #ffffff;
+}
+
+.feedback-form input {
+    width: 300px;
+    padding: 15px 0;
+    padding-left: 27px;
+    margin-right: 10px;
+}
+
+.feedback-form textarea {
+    width: 615px;
+    height: 160px;
+    padding-top: 22px;
+    padding-left: 27px;
+    margin-top: 10px;
+}
+
+.social ul{
+    margin-top: 21px;
+    margin-bottom: 48px;
+    padding-left: 0;
+}
+
+.social li{
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+
+.social a{
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 8px;
+    background: #345bb4;
+    margin-right: 3px;
+}
+
+.social li:nth-child(2) a{
+    background: #e64895;
+}
+
+.social li:nth-child(3) a{
+    background: #00b4ff;
 }
 
 @media (min-width: 768px) and (max-width: 980px){
