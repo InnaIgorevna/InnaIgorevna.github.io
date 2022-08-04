@@ -171,7 +171,6 @@ li {
     padding-top: 50px;
     padding-left: 40px;
 }
-
 .info-text .bullet:before {
     content: "*";
     position: absolute;
@@ -181,7 +180,6 @@ li {
     font-size: 25px;
     color: #BDBDBD;
 }
-
 .info-partners {
     background: #FFFFFF;
     position: absolute;
