@@ -1,12 +1,23 @@
 @charset "UTF-8";
 
- @font-face {
+ /* @font-face {
 	font-family: "symbols-technomart";
 	src: url("../font/symbols-technomart.eot?22619757");
 	src: url("../font/symbols-technomart.eot?22619757#iefix") format("embedded-opentype"),
 		 url("../font/symbols-technomart.woff?22619757") format("woff"),
 		 url("../font/symbols-technomart.ttf?22619757") format("truetype"),
 		 url("../font/symbols-technomart.svg?22619757#symbols-technomart") format("svg");
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: "symbols-technomart";
+	src: url("../font/symbols-technomart.eot");
+	src: url("../font/symbols-technomart.eot") format("embedded-opentype"),
+		 url("../font/symbols-technomart.woff") format("woff"),
+		 url("../font/symbols-technomart.ttf") format("truetype"),
+		 url("../font/symbols-technomart.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -392,7 +403,7 @@ a, a:hover, a:active, a:visited {
 
 .phone i{
 	font-size: 21px;
-	margin-right: 30px;
+	margin-right: 5px;
 }
 
 .header-phone-number{
@@ -1056,7 +1067,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .services-slider-menu{
-	background: url("../img/Layer-118.png") no-repeat right;
+	background: url("../img/layer-118.png") no-repeat right;
 	width: 240px;
 	float: left;
 	margin-right: 80px;
