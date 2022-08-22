@@ -1,16 +1,5 @@
 @charset "UTF-8";
 
- /* @font-face {
-	font-family: "symbols-technomart";
-	src: url("../font/symbols-technomart.eot?22619757");
-	src: url("../font/symbols-technomart.eot?22619757#iefix") format("embedded-opentype"),
-		 url("../font/symbols-technomart.woff?22619757") format("woff"),
-		 url("../font/symbols-technomart.ttf?22619757") format("truetype"),
-		 url("../font/symbols-technomart.svg?22619757#symbols-technomart") format("svg");
-	font-weight: normal;
-	font-style: normal;
-} */
-
 @font-face {
 	font-family: "symbols-technomart";
 	src: url("../font/symbols-technomart.eot");
@@ -21,6 +10,56 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'Clear Sans';
+    src: local('Clear Sans Thin'), local('ClearSans-Thin'), url('../font/clearsansthin.woff2') format('woff2'), url('../font/clearsansthin.woff') format('woff'), url('../font/clearsansthin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Clear Sans';
+    src: local('Clear Sans Light'), local('ClearSans-Light'), url('../font/clearsanslight.woff2') format('woff2'), url('../font/clearsanslight.woff') format('woff'), url('../font/clearsanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Clear Sans';
+    src: local('Clear Sans'), local('ClearSans'), url('../font/clearsans.woff2') format('woff2'), url('../font/clearsans.woff') format('woff'), url('../font/clearsans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Clear Sans';
+    src: local('Clear Sans Italic'), local('../font/ClearSans-Italic'), url('../font/clearsansitalic.woff2') format('woff2'), url('../font/clearsansitalic.woff') format('woff'), url('../font/clearsansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Clear Sans';
+    src: local('Clear Sans Medium'), local('ClearSans-Medium'), url('../font/clearsansmedium.woff2') format('woff2'), url('../font/clearsansmedium.woff') format('woff'), url('../font/clearsansmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Clear Sans';
+    src: local('Clear Sans Medium Italic'), local('ClearSans-MediumItalic'), url('c../font/learsansmediumitalic.woff2') format('woff2'), url('../font/clearsansmediumitalic.woff') format('woff'), url('../font/clearsansmediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Clear Sans';
+    src: local('Clear Sans Bold'), local('ClearSans-Bold'), url('../font/clearsansbold.woff2') format('woff2'), url('../font/clearsansbold.woff') format('woff'), url('../font/clearsansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Clear Sans';
+    src: local('Clear Sans Bold Italic'), local('ClearSans-BoldItalic'), url('../font/clearsansbolditalic.woff2') format('woff2'), url('../font/clearsansbolditalic.woff') format('woff'), url('../font/clearsansbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
