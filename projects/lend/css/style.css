@@ -1718,28 +1718,28 @@ html {
     }
     .toggle-menu,
     .container-nav-menu-close {
-        width: 50px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         right: 17px;
         top: -14px;
     }
     .toggle-menu:before {
-        left: 13px;
+        left: 8px;
         top: 15px;
     }
 
     .toggle-menu:after{
-        left: 13px;
-        top: 25px;
+        left: 8px;
+        top: 22px;
     }
     .container-nav-menu-close:before {
-        top: 23px;
+        top: 19px;
     }
     .container-nav-menu-close:after {
-        top: 21px;
+        top: 17px;
     }
     .container-nav-menu-close:after, .container-nav-menu-close:before {
-        left: 11px;
+        left: 6px;
     }
     .intro h1 {
         padding-right: 40px;
@@ -1909,18 +1909,18 @@ html {
    
     .container-nav-menu li {
         padding: 11px 0;
-        width: 80%;
+        width: 57%;
     }
     .container-nav-menu {
         font-size: 32px;
         line-height: 64px;
     }
     .container-nav-menu-close {
-        right: 30px;
-        top: 33px;
+        right: 17px;
+        top: 17px;
     }
     .container-nav-menu {
-        padding-top: 30px;
+        padding-top: 15px;
     }
     .container-nav-menu .accent {
         width: 100px;
