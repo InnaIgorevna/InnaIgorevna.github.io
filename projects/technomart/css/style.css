@@ -10,56 +10,17 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@font-face {
-    font-family: 'Clear Sans';
-    src: local('Clear Sans Thin'), local('ClearSans-Thin'), url('../font/clearsansthin.woff2') format('woff2'), url('../font/clearsansthin.woff') format('woff'), url('../font/clearsansthin.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Clear Sans';
-    src: local('Clear Sans Light'), local('ClearSans-Light'), url('../font/clearsanslight.woff2') format('woff2'), url('../font/clearsanslight.woff') format('woff'), url('../font/clearsanslight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Clear Sans';
-    src: local('Clear Sans'), local('ClearSans'), url('../font/clearsans.woff2') format('woff2'), url('../font/clearsans.woff') format('woff'), url('../font/clearsans.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Clear Sans';
-    src: local('Clear Sans Italic'), local('../font/ClearSans-Italic'), url('../font/clearsansitalic.woff2') format('woff2'), url('../font/clearsansitalic.woff') format('woff'), url('../font/clearsansitalic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Clear Sans';
-    src: local('Clear Sans Medium'), local('ClearSans-Medium'), url('../font/clearsansmedium.woff2') format('woff2'), url('../font/clearsansmedium.woff') format('woff'), url('../font/clearsansmedium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Clear Sans';
-    src: local('Clear Sans Medium Italic'), local('ClearSans-MediumItalic'), url('c../font/learsansmediumitalic.woff2') format('woff2'), url('../font/clearsansmediumitalic.woff') format('woff'), url('../font/clearsansmediumitalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Clear Sans';
-    src: local('Clear Sans Bold'), local('ClearSans-Bold'), url('../font/clearsansbold.woff2') format('woff2'), url('../font/clearsansbold.woff') format('woff'), url('../font/clearsansbold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Clear Sans';
-    src: local('Clear Sans Bold Italic'), local('ClearSans-BoldItalic'), url('../font/clearsansbolditalic.woff2') format('woff2'), url('../font/clearsansbolditalic.woff') format('woff'), url('../font/clearsansbolditalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-}
 
 
+@font-face {
+	font-family: 'WiGuru';
+	src: url('../font/wiguru.eot'); /* IE 9 Compatibility Mode */
+	src: url('../font/wiguru.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../font/wiguru.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../font/wiguru.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../font/wiguru.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../font/wiguru.svg#wiguru') format('svg'); /* Chrome < 4, Legacy iOS */
+}
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -136,8 +97,9 @@ body{
 }
 
 h1, h2{
-	font: 36px/24px "Cuprum", "Arial", sans-serif;
+	font: 36px/24px "WiGuru", "Arial", sans-serif;
 	text-transform: uppercase;
+	font-weight: normal;
 }
 
 h2{
@@ -183,7 +145,8 @@ a, a:hover, a:active, a:visited {
 
 .header-logo a{
 	text-transform: uppercase;
-	font: bold 24px/26.15px "Cuprum", "Arial", sans-serif;
+	font: bold 24px/26.15px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .header-logo{
@@ -241,7 +204,8 @@ a, a:hover, a:active, a:visited {
 	min-width: 220px;
 	height: 40px;
 	padding-left: 50px;
-	font: 17px/18px "Cuprum", "Arial", sans-serif;
+	font: 17px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	background: #293449;
 	color: #fff;
 }
@@ -271,7 +235,8 @@ a, a:hover, a:active, a:visited {
 
 
 .page-header-top span{
-	font: 17px/18px "Cuprum", "Arial", sans-serif;
+	font: 17px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	color: #fff;
 }
 
@@ -280,7 +245,8 @@ a, a:hover, a:active, a:visited {
 	padding-top: 11px;
 	padding-left: 11px;
 	max-height: 34px;
-	font: 17px/18px "Cuprum", "Arial", sans-serif;
+	font: 17px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	color: #fff;
 	max-width: 138px;
 	min-width: 138px;
@@ -424,7 +390,9 @@ a, a:hover, a:active, a:visited {
 
 .column:nth-child(1) p{
 	color: #ee3643;
-	font: italic 16px/23px "Cuprum", "Arial", sans-serif;
+	font: italic 16px/23px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
 }
 
 .phone {
@@ -447,17 +415,22 @@ a, a:hover, a:active, a:visited {
 
 .header-phone-number{
 	color: #ee3643;
-	font: bold 21px/16.93px "Cuprum", "Arial", sans-serif;
+	font: bold 21px/16.93px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin-left: 10px;
 }
 
 .address-name{
 	color: #32425c;
-	font: bold 14px/24px "Cuprum", "Arial", sans-serif;
+	font: bold 14px/24px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .product-filters-apply .btn-white, .column .btn-white{
-	font: 21px/18px "Cuprum", "Arial", sans-serif;
+	font: 21px/18px "WiGuru", "Arial", sans-serif;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .column .btn-white:nth-child(1){
@@ -501,7 +474,8 @@ a, a:hover, a:active, a:visited {
 
 .user-links a{
 	color: #32425c;
-	font: 16px/18px "Cuprum", "Arial", sans-serif;
+	font: 16px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	text-decoration: underline;
 	margin-left: 3px;
 	margin-right: 20px;
@@ -535,7 +509,8 @@ a, a:hover, a:active, a:visited {
 }
 
 .user{
-	font: 21px/18px "Cuprum", "Arial", sans-serif;
+	font: 21px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	margin-left: 10px;
 	color: #000;
 }
@@ -553,7 +528,8 @@ a, a:hover, a:active, a:visited {
 
 .menu-header-bottom a {
 	display: block;
-	font: 17px/17px "Cuprum", "Arial", sans-serif;
+	font: 17px/17px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	padding: 21px 33px 17px;
 }
 
@@ -645,7 +621,6 @@ a, a:hover, a:active, a:visited {
 
 .promo-slider-info h1{
 	color: #fff;
-	font-weight: bold;
 	margin-bottom: 6px;
 	margin-top: 30px;
 }
@@ -655,7 +630,8 @@ a, a:hover, a:active, a:visited {
 }
 
 .promo-slider-info span:nth-child(2){
-	font: 18px/24px "Cuprum", "Arial", sans-serif;
+	font: 18px/24px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .slider-content-item .btn-red{
@@ -807,7 +783,8 @@ a, a:hover, a:active, a:visited {
 }
 
 .promo-item-name{
-	font: bold 24px/30px "Cuprum", "Arial", sans-serif;
+	font: bold 24px/30px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	color: #fff;
 	left: 20px;
 }
@@ -875,7 +852,6 @@ a, a:hover, a:active, a:visited {
 
 .goods-btn-red, .btn-red{
 	background-color: #ee3643;
-	font: 14px/18px "Cuprum", "Arial", sans-serif;
 }
 
 .popular-title .btn-red, .goods-btn-red{
@@ -927,7 +903,8 @@ a, a:hover, a:active, a:visited {
     margin-bottom:7px;
     border-bottom-color:#367315; 
     background-color:#63a63e;
-    font: 14px/18px "Cuprum", "Arial", sans-serif;
+    font: 14px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
     color: #fff;
     text-decoration:none;
     text-transform:uppercase;    
@@ -1101,7 +1078,8 @@ a, a:hover, a:active, a:visited {
     text-decoration:none;
     border-top: 1px solid #405069;
     border-bottom: 1px solid #293449;
-    font: bold 21px/30px "Cuprum", "Arial", sans-serif;
+    font: bold 21px/30px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
     color: #fff;
 }
 
@@ -1204,7 +1182,8 @@ a, a:hover, a:active, a:visited {
 
 .company-partners li{
 	color: #000;
-	font: 18px/20px "Cuprum", "Arial", sans-serif;
+	font: 18px/20px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	margin-bottom: 20px;
 	padding-left: 35px;
 	position: relative;
@@ -1251,7 +1230,8 @@ a, a:hover, a:active, a:visited {
 .page-footer{
 	margin-top: 86px;
 	margin-bottom: 0;
-	font:  18px/24px "Cuprum", "Arial", sans-serif;
+	font:  18px/24px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .page-footer-top{
@@ -1268,7 +1248,8 @@ a, a:hover, a:active, a:visited {
 }
 .page-footer-bottom{
 	background-color: #293449; 
-	font:  16px/18px "Cuprum", "Arial", sans-serif;
+	font:  16px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	padding-top: 35px;
 	padding-bottom: 35px;
 }
@@ -1341,7 +1322,8 @@ a, a:hover, a:active, a:visited {
 .footer-logo a{
 	color: #fff;
 	padding: 0px 39px;
-	font: bold 30px/30px "Cuprum", "Arial", sans-serif;
+	font: bold 30px/30px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .menu li{
@@ -1790,7 +1772,8 @@ input[type="radio"]:checked + label:before {
 	position: relative;
 	top: -10px;
 	color: #000;
-	font:  18px/18px "Cuprum", "Arial", sans-serif;
+	font:  18px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .feedback-form-data label{
@@ -1869,7 +1852,8 @@ input[type="radio"]:checked + label:before {
 	position: relative;
 	margin-bottom: 45px;
 	background-color: #fff;
-	font:  30px/18px "Cuprum", "Arial", sans-serif;
+	font:  30px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .modal-content-text span{
@@ -1895,7 +1879,8 @@ input[type="radio"]:checked + label:before {
 
 .feedback-form-btn .btn-white, .bookmark-form-btn .btn-white{
 	color: #000;
-	font: 14px/18px "Cuprum", "Arial", sans-serif;
+	font: 14px/18px "WiGuru", "Arial", sans-serif;
+	font-weight: normal;
 	margin-left: 10px;
 }
 
