@@ -5,6 +5,10 @@
 	<title>Техномарт</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="popup/css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="popup/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="popup/css/buttons.css">
+
 </head>  
 
 <body>
@@ -425,6 +429,9 @@
     </div>	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="popup/js/jquery.noty.packaged.min.js"></script>
+	<script src="popup/js/looper.min.js"></script>
+	
 	<script>
 
 	//Слайдер 
@@ -464,6 +471,87 @@
 				$('.cart-count').text(cartCount+1);
 			});
 		});
+
+
+	//Всплывающее уведомление
+		let names = ['Виктор', 'Макс', 'Артем', 'Иван', 'Михаил', 'Ярослав', 'Вадим', 'Денис', 'Данил', 'Марк',
+        'Мирон', 'Илья', 'Леф', 'Матвей', 'Роман', 'Дмитрий', 'Владимер', 'Сергей', '', 'Егор', 'Олег',
+        'Павел', 'Игорь', 'Вячеслав', 'Глеб', 'Евгений', 'Тимур', 'Антон', 'Степан', 'Семён'];
+
+    function showPopup(type, text) {
+        let n = noty({
+            text: text,
+            type: type,
+            dismissQueue: true,
+            layout: 'bottomLeft',
+            closeWith: ['click'],
+            theme: 'relax',
+            maxVisible: 1,
+            killer: true,
+            timeout: 500000,
+            animation: {
+                open: 'animated bounceInRight',
+                close: 'animated bounceOutRight',
+                easing: 'swing',
+                speed: 1000
+            },
+            callback: {
+                afterShow: function () {
+                    if (type == 'success') {
+                        let counter = $("#counter");
+                        let last = parseInt(counter.html());
+                        if (last > 5) last--;
+                        counter.html(last);
+                    }
+                }
+            }
+        });
+    }
+
+    function rnd(max) {
+        return Math.floor(Math.random() * max)
+    }
+
+    let messages = [
+        {type: 'success', msg: '<div class="activity-item"> <i class="fa fa-check text-warning"></i> <div class="activity"> %name% <?= $fromCity; ?> оставил заявку на консультацию!</div> </div>'},
+        {type: 'success', msg: '<div class="activity-item"> <i class="fa fa-check text-warning"></i> <div class="activity"> %name% <?= $fromCity; ?> оставил заявку на консультацию!</div> </div>'},
+        {type: 'success', msg: '<div class="activity-item"> <i class="fa fa-check text-warning"></i> <div class="activity"> %name% <?= $fromCity; ?> оставил заявку на консультацию!</div> </div>'},
+        {type: 'success', msg: '<div class="activity-item"> <i class="fa fa-check text-warning"></i> <div class="activity"> %name% <?= $fromCity; ?> оставил заявку на консультацию!</div> </div>'},
+        {type: 'success', msg: '<div class="activity-item"> <i class="fa fa-check text-warning"></i> <div class="activity"> %name% <?= $fromCity; ?> оставил заявку на консультацию!</div> </div>'},
+        {type: 'success', msg: '<div class="activity-item"> <i class="fa fa-check text-warning"></i> <div class="activity"> %name% <?= $fromCity; ?> оставил заявку на консультацию!</div> </div>'},
+        {type: 'success', msg: '<div class="activity-item"> <i class="fa fa-check text-warning"></i> <div class="activity"> %name% <?= $fromCity; ?> оставил заявку на консультацию!</div> </div>'},
+        {type: 'information', msg: '<div class="activity-item"> <i class="fa fa-commenting-o text-warning"></i><div class="activity">Последний отзыв:<br><span style="color:#17375f">Удивительно, что такую информацию дают совершенно бесплатно!</span></div> </div>'},
+        {type: 'information', msg: '<div class="activity-item"> <i class="fa fa-commenting-o text-warning"></i><div class="activity">Последний отзыв:<br><span style="color:#17375f">Товар огонь!</span></div></div>'},
+        {type: 'information', msg: '<div class="activity-item"> <i class="fa fa-commenting-o text-warning"></i><div class="activity">Последний отзыв:<br><span style="color:#17375f">Очень качественный товар. Заказ пришел вовремя.</span></div></div>'},
+        {type: 'information', msg: '<div class="activity-item"> <i class="fa fa-commenting-o text-warning"></i><div class="activity">Последний отзыв:<br><span style="color:#17375f">Заказывал перфоратор BOSCH BFG 6000. Перфоратор качественный, надеюсь прослужит долго.</span></div></div>'}
+    ];
+
+    let prevMsg = -1;
+    function popupTimer() {
+        let curMsg;
+        do {
+            curMsg = rnd(messages.length);
+        } while (prevMsg == curMsg);
+        prevMsg = curMsg;
+
+        let message = messages[curMsg];
+        let name = names[Math.floor(Math.random() * names.length)];
+        showPopup(message.type, message.msg.replace('%name%', name));
+        setTimeout(popupTimer, 3000 + rnd(5000));
+    }
+    setTimeout(popupTimer, 5000);
+
+</script>
+<script type="text/javascript">
+    if (true)
+        (function (sel, from, to) {
+            let time = 1000,
+                steps = 3000,
+                dtime = Math.round(time / steps),
+                step = Math.round((to - from) / steps),
+                el = $(sel),
+                done = false;
+        })('.counterBlock1 .counter1', 1000, 2137);
 
 	</script>
 </body>

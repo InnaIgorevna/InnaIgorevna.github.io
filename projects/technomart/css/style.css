@@ -1997,6 +1997,7 @@ input[type="radio"]:checked + label:before {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 5px;	
+	font-size: 14px;
 }
 
 .feedback-form-data textarea{

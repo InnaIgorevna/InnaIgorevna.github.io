@@ -18,7 +18,7 @@
 					<button type="submit" value="" class="icon-search"></button>	
 				</form>
 				<a href="#" class="bookmarks icon-bookmark">Закладки: <span class="bookmark-count">0</span></a>
-				<a href="#" class="cart icon-basket bg-red">Корзина: <span class="cart-count">10</span></a>				
+				<a href="#" class="cart icon-basket bg-red">Корзина: <span class="cart-count">0</span></a>				
 				<a href="#" class="order">Оформить заказ</a>
 			</div>
 		</div>
@@ -456,6 +456,18 @@
 			});
 		});
 
+// Добавляем товар в отдел закладки и корзины
+		$(document).ready(function() {
+			$(".share").click(function() {
+				let bookmarkCount = parseInt($('.bookmark-count').text());
+				$('.bookmark-count').text(bookmarkCount+1);
+			});
+
+			$(".buy").click(function() {
+				let cartCount = parseInt($('.cart-count').text());
+				$('.cart-count').text(cartCount+1);
+			});
+		});
 		  
 
 	</script>
