@@ -31,7 +31,7 @@
 				<div class="column horizontal">
 					<div class="phone">
 						<i class="icon icon-phone"></i>
-						<span class="header-phone-number">7 (812) 555-05-55</span>	
+						<a href="tel:+78125550555" class="header-phone-number"> 7 (812) 555-05-55</a>	
 					</div>
 					<p class="address-name">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
 				</div>
@@ -81,7 +81,7 @@
 		<div class="page-layout">
 			<div class="page-content-title">
 				<ul class="breadcrumbs">
-					<li><a href="#"><i class="icon-home"></i></a></li>
+					<li><a href="index.html"><i class="icon-home"></i></a></li>
 					<li><a href="#"><i class="icon-right"></i>Каталог</a></li>
 					<li><a href="#"><i class="icon-right"></i>Инструмент</a></li>
 					<li><a href="#"><i class="icon-right"></i>Перфораторы</a></li>
@@ -98,20 +98,18 @@
 
 				        <div class="product-filter-price">
 				        	<div class="filter-title">Цена:</div>
-							
-				            <div class="range-filter">
+
+							<div class="range-filter">
 					            <div class="range-controls">
-					                <div class="scale"><div style="width:80%;" class="bar"></div></div>
-					                <div class="toggle min-toggle"></div>
-					                <div class="toggle max-toggle"></div>
+									<div class="scale" id="slider"></div>
 					            </div>
 					            <div class="price-controls">
-					                <input class="min-price" type="text" value="0">
-					                &nbsp;&mdash; <input class="max-price" type="text" value="30 000">
+									<input class="min-price" type="number" id="min" value="0"/>
+									<input class="max-price" type="number" id="max" value="30000"/>
 					            </div>
 					        </div>
-						</div>
 
+							
 						<div class="product-filters-producers">
 					       	<div class="filter-title">Производители</div>
 					       	<div class="filter">
@@ -364,7 +362,7 @@
 
 				<div class="footer-address horizontal">
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<span class="footer-phone-number">7(812) 555-05-55</span>
+					<a href="tel:+78125550555" class="footer-phone-number">7(812) 555-05-55</a>
 				</div>
 				<div class="footer-goods-menu horizontal">
 					<ul class="menu">
@@ -388,7 +386,7 @@
 		<div class="page-footer-bottom">
 			<div class="page-layout">
 				<div class="footer-column horizontal">
-					<span>&copy;&nbsp;2010-2015 Компания &laquo;Техномарт&raquo;</span>
+					<span>&copy;&nbsp;2010-<script>document.write(new Date().getFullYear())</script> Компания &laquo;Техномарт&raquo;</span>
 					<span>Все права защищены</span>
 				</div>
 				<div class="footer-column horizontal">
@@ -409,7 +407,59 @@
 			</div>
 		</div>
 	</footer>
-    <!--<script type="text/javascript" src="js/bookmark.min.js"></script>-->
-    <script type="text/javascript" src="js/bookmark.js"></script>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script>
+
+// Слайдер ползунок выбор цены товара
+		$(function() {
+			let range = $("#slider"),
+				min = $("input#min"),
+				max = $("input#max");
+				
+			range.slider({
+				min: 0,
+				max: 30000,
+				values: [0,30000],
+				range: true,
+				stop: function(event, ui) {
+					min.val(range.slider("values",0));
+					max.val(range.slider("values",1));
+				},
+				slide: function(event, ui){
+					min.val(range.slider("values",0));
+					max.val(range.slider("values",1));
+				}
+			});
+			
+			min.change(function(){
+			let  valMin = +min.val(),
+				valMax = +max.val();
+			
+			if (valMax < valMin){
+				valMin = valMax
+				$(this).val(valMin);
+			}
+			range.slider("values", 0 , valMin);
+			});
+			
+			max.change(function(){
+			let  valMin = +min.val(),
+				valMax = +max.val();   
+			if (valMax < valMin){
+				valMax = valMin;
+				$(this).val(valMax);
+			}
+			range.slider("values", 1 , valMax);
+			});
+		});
+
+		  
+
+	</script>
+	
+
 </body>
 </html>
