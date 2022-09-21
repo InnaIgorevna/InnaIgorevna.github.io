@@ -1330,11 +1330,27 @@ input[type="checkbox"]:checked + label:before{
     padding: 30px 15px;
     position: relative;
   }
+  .modal-content {
+    width: 86%;
+    padding: 47px 20px
+  }
+  .modal-content-information-date {
+    width: 54%;
+  }
+  .modal-content-quantity {
+    left: 111px;
+  }
+  .modal-content-information-adult {
+    margin-bottom: 45px;
+  }
+  .children{
+    top: 65px;
+  }
 }
 @media (max-width: 320px){
-.container {
-    width: 320px;
-}
+  .container {
+      width: 320px;
+  }
 }
 
 
