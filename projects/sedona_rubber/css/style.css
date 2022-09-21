@@ -1061,7 +1061,7 @@ input[type="checkbox"]:checked + label:before{
   }
 
   .correction-content .general-information{
-    padding: 10px 0px;
+    padding: 10px 15px;
   }
 
   .content{
@@ -1257,10 +1257,86 @@ input[type="checkbox"]:checked + label:before{
 }
 
 @media(max-width: 590px){
+  .central-text {
+    padding: 0 15px;
+  }
   .container{
-    width: 590px;
+    width: 100%;
+  }
+  .button-reservation {
+    width: 100%;
+  }
+  .horizontal {
+    display: block;
+  }
+  .information-content-column-features{
+    padding: 0 15px;
+  }
+  .map-text {
+    width: 85%;
+  }
+  .page-footer-container {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .page-footer {
+    padding-bottom: 30px;
+  }
+  .page-footer-logo div {
+    margin: 40px auto;
+  }
+  .chief-block {
+    max-width: 96%;
+  }
+  .product-items-sort {
+    height: 60px;
+  }
+  .product-filters-producers {
+    height: 500px;
+  }
+  .product-filters {
+    width: 80%;
+  }
+  .for-registration {
+    width: 280px;
+  }
+  .corrector-container-price {
+    width: 95%;
+    margin-left: 30px;
+  }
+  .distribution-services ul{
+    display: none;
+  }
+  .number-services {
+    padding: 25px 0px;
+    padding-left: 10px;
+    height: 15px;
+    width: 90%;
+  }
+  .images img{
+    display: block;
+    margin: 20px;
+  }
+  .content-text {
+    padding-left: 10px;
+  }
+  .rating {
+    position: absolute;
+    display: block;
+    right: 15px;
+    margin-top: -200px;
+  }
+  .content-column {
+    padding: 30px 15px;
+    position: relative;
   }
 }
+@media (max-width: 320px){
+.container {
+    width: 320px;
+}
+}
+
 
 
 
