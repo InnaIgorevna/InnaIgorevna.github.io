@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>PINK</title>
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -242,28 +242,20 @@
 
       <div class="layout-center-wrapper">
         <div class="review">
-          <div class="review__toggle">
-            <a class="review__toggle-pointer  review__toggle-pointer--left" href="#"></a>
-            <a class="review__toggle-pointer  review__toggle-pointer--right" href="#"></a>
-          </div>
+
 
           <div class="slider">
             <div class="slider__control">
-              <input class="slider__control-element-checked-1" type="radio" id="btn-1" name="btn" checked>
-              <input class="slider__control-element-checked-2" type="radio" id="btn-2" name="btn">
-              <input class="slider__control-element-checked-3" type="radio" id="btn-3" name="btn">
-              <div class="slider__slider-controls">
-                <label class="slider__control-element  slider__control-element-1" for="btn-1"></label>
-                <label class="slider__control-element  slider__control-element-2" for="btn-2"></label>
-                <label class="slider__control-element  slider__control-element-3" for="btn-3"></label>
-              </div>
-
-              <div class="slider__list">
-                <div class="review__container">
-                  <div class="review__item">
+              <div class="slider__list ">
+                <div class="review__toggle">
+                  <div class="review__toggle-pointer  review__toggle-pointer--left" ></div>
+                  <div class="review__toggle-pointer  review__toggle-pointer--right" ></div>
+                </div>
+                <ul class="review__container slider-line">
+                  <li class="review__item">
                     <div class="review__user">
-                      <h2 class="review__author">Николай Петров</h2>
-                      <p class="review__employment">25 лет, водитель трамвая</p>
+                      <h2 class="review__author">Кузьма Петрович</h2>
+                      <p class="review__employment">48 лет, продавец</p>
                     </div>
                     <p class="review__story">
                       &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -271,23 +263,30 @@
                     </p>
 
                     <div class="review__picture"></div>
-                  </div>
-                  <div class="review__item">
-                    <h2 class="review__author">Lorem ipsum</h2>
+                  </li>
+                  <li class="review__item">
+                    <div class="review__user">
+                      <h2 class="review__author">Ирина Василивна</h2>
+                      <p class="review__employment">25 лет, водитель трамвая</p>
+                    </div>
                     <p class="review__story">
-                      &laquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aspernatur assumenda aut autem,
-                      commodi cupiditate deleniti eveniet excepturi fugiat id illo, iure mollitia odio odit praesentium quae
-                      quo quos similique.&raquo;
+                      &laquo;Классное приложение! Фотографии четкие, насыщеный розовый цвет получается. И народ такой веселый в чате ). Только, нужно привыкнуть к дизайну приложения, не удобно сохранять фотография после обработки.&raquo;
                     </p>
-                  </div>
-                  <div class="review__item">
-                    <h2 class="review__author">Lorem ipsum</h2>
+
+                    <div class="review__picture"></div>
+                  </li>
+                  <li class="review__item">
+                    <div class="review__user">
+                      <h2 class="review__author">Николай Петров</h2>
+                      <p class="review__employment">23 лет, грузчик</p>
+                    </div>
                     <p class="review__story">
-                      &laquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi eveniet laudantium
-                      magni mollitia nam officiis placeat quia reiciendis repudiandae?&raquo;
+                      &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                      А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
                     </p>
-                  </div>
-                </div>
+                    <div class="review__picture"></div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -298,8 +297,8 @@
       <div class="background-container  background-container--price">
         <div class="layout-center-wrapper">
           <div class="price">
-            <div class="slider">
-              <div class="slider__control">
+            <div class="slider-price">
+              <div class="slider__control-price">
                 <input class="slider__control-element-price-checked-1" type="radio" id="toggle-1" name="toggle" >
                 <input class="slider__control-element-price-checked-2" type="radio" id="toggle-2" name="toggle" checked>
                 <input class="slider__control-element-price-checked-3" type="radio" id="toggle-3" name="toggle">
@@ -579,6 +578,47 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+    // Слайдер
+      const reviewItem = document.querySelectorAll('.slider .review__item');
+      const sliderLine = document.querySelector('.slider .slider-line');
+      let count = 0;
+      let width;
+
+      function init() {
+          width = document.querySelector('.slider').offsetWidth;
+          sliderLine.style.width = width * reviewItem.length + 'px';
+          reviewItem.forEach(item => {
+              item.style.width = width + 'px';
+              item.style.height = 'auto';
+          });
+          rollSlider();
+      }
+
+      init();
+      window.addEventListener('resize', init);
+
+      document.querySelector('.review__toggle-pointer--right').addEventListener('click', function () {
+          count++;
+          if (count >= reviewItem.length) {
+              count = 0;
+          }
+          rollSlider();
+      });
+
+      document.querySelector('.review__toggle-pointer--left').addEventListener('click', function () {
+          count--;
+          if (count < 0) {
+              count = reviewItem.length - 1;
+          }
+          rollSlider();
+      });
+
+      function rollSlider() {
+          sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+
+      }
+    </script>
   </body>
 </html>
 

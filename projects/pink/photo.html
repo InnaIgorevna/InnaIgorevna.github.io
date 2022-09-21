@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PINK</title>
-  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/picturefill.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 </head>
@@ -169,7 +169,7 @@
             </div>
 
             <div class="post__like">
-              <a class="post__like-text  post__like-text--best">Нравится:215</a>
+              <span class="post__like-text  post__like-text--best">Нравится:<span class="likes-number">215</span><span class="heart"></span></span>
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@
               </div>
 
               <div class="post__like">
-                <a class="post__like-text">Нравится:356</a>
+                <span class="post__like-text">Нравится:<span class="likes-number">358</span><span class="heart"></span></span>
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@
               </div>
 
               <div class="post__like">
-                <a class="post__like-text">Нравится:666</a>
+                <span class="post__like-text">Нравится:<span class="likes-number">689</span><span class="heart"></span></span>
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@
               </div>
 
               <div class="post__like">
-                <a class="post__like-text">Нравится:215</a>
+                <span class="post__like-text">Нравится:<span class="likes-number">278</span><span class="heart"></span></span>
               </div>
             </div>
           </div>
@@ -272,7 +272,7 @@
               </div>
 
               <div class="post__like">
-                <a class="post__like-text">Нравится:4</a>
+                <span class="post__like-text">Нравится:<span class="likes-number">4</span><span class="heart"></span></span>
               </div>
             </div>
           </div>
@@ -298,7 +298,7 @@
               </div>
 
               <div class="post__like">
-                <a class="post__like-text">Нравится:150</a>
+                <span class="post__like-text">Нравится:<span class="likes-number">150</span><span class="heart"></span></span>
               </div>
             </div>
           </div>
@@ -324,7 +324,7 @@
               </div>
 
               <div class="post__like">
-                <a class="post__like-text">Нравится:2560</a>
+                <span class="post__like-text">Нравится:<span class="likes-number">1258</span><span class="heart"></span></span>
               </div>
             </div>
           </div>
@@ -378,20 +378,16 @@
                   </div>
                   <div class="photo-upload__container-tools-scale">
                     <div class="photo-upload__tools-scale">
-                      <div class="photo-upload__tools-scale-rail"></div>
-                      <div class="photo-upload__tools-scale-bubble  photo-upload__tools-scale-bubble--first"></div>
+                      <input class="photo-upload__tools-scale-rail" type="range" step="1" min="1" max="90">
                     </div>
-                    <div class="photo-upload__tools-scale  photo-upload__tools-scale--item">
-                      <div class="photo-upload__tools-scale-rail"></div>
-                      <div class="photo-upload__tools-scale-bubble  photo-upload__tools-scale-bubble--second"></div>
+                    <div class="photo-upload__tools-scale">
+                      <input class="photo-upload__tools-scale-rail" type="range" step="1" min="1" max="48">
                     </div>
-                    <div class="photo-upload__tools-scale  photo-upload__tools-scale--item">
-                      <div class="photo-upload__tools-scale-rail"></div>
-                      <div class="photo-upload__tools-scale-bubble  photo-upload__tools-scale-bubble--three"></div>
+                    <div class="photo-upload__tools-scale">
+                      <input class="photo-upload__tools-scale-rail" type="range" step="1" min="1" max="20">
                     </div>
                   </div>
                 </div>
-
                 <div class="photo-upload__send">
                   <a class="photo-upload__link  photo-upload__link--send" href="#">Запостить</a>
                   <a class="photo-upload__link  photo-upload__link--canceled" href="#">Отмена</a>
@@ -540,5 +536,23 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+    // Лайк
+    let postLike = document.querySelectorAll('.post__like');
+    for(let i = 0; i < postLike.length; i++) {
+      postLike[i].addEventListener("click", clickCount);
+    }
+    function clickCount() {
+      let heart = this.parentElement.querySelector('.heart');
+      let likesNumber = this.parentElement.querySelector('.likes-number');
+      if (heart.classList.contains('added')) {
+        likesNumber.textContent--;
+      } else {
+        likesNumber.textContent++;
+      }
+
+      heart.classList.toggle('added');
+    };
+    </script>
   </body>
 </html>

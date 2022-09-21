@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>PINK</title>
-  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 </head>
   <body>
@@ -143,7 +143,7 @@
       </div>
 
       <div class="layout-center-wrapper">
-        <form class="form" action="#">
+        <form class="form" action="#" method="post" onsubmit="validateForm(this); return false;">
           <div class="intro-inner  intro-inner--intro-form">
             <span class="intro-inner__text  intro-inner__text-form">
               Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
@@ -154,17 +154,17 @@
             <div class="fieldset  fieldset--user-initials">
               <label class="fieldset__label">
                 <span class="fieldset__text">Имя:</span>
-                <input class="fieldset__input  fieldset__input--correct" type="text" placeholder="Введите ваше имя" required>
+                <input class="fieldset__input  fieldset__input--correct" name="name" type="text" placeholder="Введите ваше имя" required="required">
               </label>
 
               <label class="fieldset__label">
                 <span class="fieldset__text">Фамилия:</span>
-                <input class="fieldset__input" type="text" placeholder="Укажите фамилию" required>
+                <input class="fieldset__input" type="text" placeholder="Укажите фамилию" required="required">
               </label>
 
               <label class="fieldset__label">
                 <span class="fieldset__text">Отчество:</span>
-                <input class="fieldset__input" type="text" placeholder="Ну и отчество тоже" required>
+                <input class="fieldset__input" type="text" placeholder="Ну и отчество тоже" required="required">
               </label>
             </div>
           </div>
@@ -212,7 +212,7 @@
                 <div class="fieldset__item-contact">
                   <span class="fieldset__text  fieldset__text-hidden-mobile">Номерок телефончика</span>
                   <span class="fieldset__text-hidden  fieldset__text--contact-information">Номер телефона</span>
-                  <input class="fieldset__input  fieldset__input--contact-information" type="text" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" required>
+                  <input class="fieldset__input  fieldset__input--contact-information" name="phone" type="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" required="required">
                   <div class="fieldset__phone-svg">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="19.697px" height="19.696px" viewBox="0 0 19.697 19.696" xml:space="preserve">
                       <path fill="#d22856" d="M9.848,0C6.34,0,2.823,0.628,1.546,1.878c-1.058,1.04-1.412,2.874-1.53,4.035c0,0-0.016,0.115-0.016,0.165
@@ -234,7 +234,7 @@
                 <div class="fieldset__item-contact">
                   <span class="fieldset__text  fieldset__text-hidden-mobile">Aдресок почты</span>
                   <span class="fieldset__text-hidden  fieldset__text--contact-information">Адрес почты</span>
-                  <input class="fieldset__input  fieldset__input--contact-information" type="text" placeholder="Введите почту" required>
+                  <input class="fieldset__input  fieldset__input--contact-information" type="text" name="email" placeholder="Введите почту" required="required">
                   <div class="fieldset__mail-svg">
                     <svg  xmlns="http://www.w3.org/2000/svg" width="17.988px" height="13.966px" viewBox="0 0 17.988 13.966">
                       <g>
@@ -290,7 +290,7 @@
           <div class="form__container  form__container--submit">
               <button type="submit" class="form__submit-btn">Отправить форму</button>
 
-            <div class="form__submit-text-required-fields">
+            <div class="form__submit-text-required">
               <span class="form__submit-star">*</span> &mdash; обязательные
             </div>
           </div>
@@ -301,7 +301,7 @@
             <h2 class="form__submit-title  form__submit-title-error">Что-то пошло не так!</h2>
             <p class="form__submit-text  form__submit-text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
 
-            <button type="submit"  class="form__submit-btn">Отправить форму</button>
+            <button class="form__submit-btn">Отправить форму</button>
           </div>
 
 
@@ -312,7 +312,7 @@
               В ближайшее время мы рассмотрим ее и оповестим вас.
             </p>
             <div class="form__container-background">
-              <button type="submit" class="form__submit-btn  form__submit-btn--ok">Отправить форму</button>
+              <button  class="form__submit-btn  form__submit-btn--ok">Закрыть</button>
             </div>
           </div>
         </form>
@@ -457,5 +457,59 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+
+    <script>
+      //Временный сплывающий попат
+      window.onload = function(){
+        let btnOk = document.querySelector(".form__submit-btn--ok");
+        btnOk.onclick = function(e){
+          e.preventDefault();
+          document.querySelector(".form__submit-ok").classList.add("form__submit-ok--hidden");
+        }
+      }
+
+      //Валидатор
+      function validateForm(form) {
+          if (form.elements["name"].value == "") {
+              alert("Введите Ваше имя!");
+              return false;
+          }
+          if (form.elements["name"].value.length < 2) {
+              alert("Введите Ваше имя!");
+              return false;
+          }
+          let phone_reg = new RegExp("[A-z А-я]", "g");
+          let literInPhone = phone_reg.test(form.elements["phone"].value);
+          if (form.elements["phone"].value == "") {
+            alert("Введите Ваш номер телефона!");
+            return false;
+          }
+          if (literInPhone) {
+            alert("Введите Ваш номер телефона без пробела.");
+            return false;
+          }
+          if (form.elements["phone"].value.length < 10) {
+            alert("Введите Ваш номер телефона!");
+            return false;
+          }
+          if (form.elements["phone"].value.length > 16) {
+            alert("Введите Ваш номер телефона!");
+            return false;
+          }
+
+          //form.submit();
+
+          document.querySelector(".form__submit-ok").classList.remove("form__submit-ok--hidden");
+        }
+
+
+
+
+
+ 
+  
+  
+
+    </script>
   </body>
 </html>
